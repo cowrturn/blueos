@@ -1,0 +1,12 @@
+{
+  "id": "blueos-ros",
+  "name": "BlueOS ROS",
+  "version": "0.0.2",
+  "image": "13.209.69.202:5000/blueos-ros:0.0.2",
+  "web": {
+    "port": 9090,
+    "path": "/"
+  },
+  "privileged": true,
+  "hostNetwork": true
+}
