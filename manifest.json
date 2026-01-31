@@ -1,61 +1,14 @@
 {
-  "manifest_version": "2.0",
-  "name": "私有仓库示例扩展",
-  "version": "1.0.0",
-  "identifier": "com.yourcompany.private-extension",
-  "author": "CQSZDIY",
-  "description": "从私有Docker仓库安装的示例扩展",
-  
-  "docker": {
-    "image": "13.209.69.202:5000/blueos-ros:0.0.2",
-    "restart": "unless-stopped",
-    "network_mode": "bridge"
-  },
-  
-  "ports": [
+  "version": 1,
+  "extensions": [
     {
-      "container": 80,
-      "host": 8181,
-      "protocol": "tcp",
-      "description": "Web服务端口"
-    }
-  ],
-  
-  "interfaces": {
-    "main": {
-      "type": "iframe",
-      "src": "http://localhost:8181",
-      "name": "扩展界面",
-      "icon": "mdi-application",
-      "width": 800,
-      "height": 600
-    }
-  },
-  
-  "environment": [
-    {
-      "name": "CONFIG_PATH",
-      "description": "配置文件路径",
-      "default": "/data/config.json",
-      "required": false
-    }
-  ],
-  
-  "storage": [
-    {
-      "container": "/data",
-      "host": "/home/pi/.blueos-extensions/custom-extension/data"
-    }
-  ],
-  
-  "dependencies": {
-    "blueos-core": ">=1.0.0"
-  },
-  
-  "health": {
-    "test": ["CMD", "curl", "-f", "http://localhost:80/health"],
-    "interval": 30,
-    "timeout": 10,
-    "retries": 3
-  }
+      "id": "blueos-ros",
+      "name": "ROS Noetic",
+      "description": "ROS environment for BlueOS",
+      "version": "0.0.2",
+      "manifest": "13.209.69.202:80/extensions/blueos-ros/manifest.json",
+      "icon": "13.209.69.202:80/extensions/blueos-ros/icon-ros.png",
+      "author": "CQSZDIY"
+    },
+  ]
 }
