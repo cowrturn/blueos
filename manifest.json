@@ -2,6 +2,59 @@
   "version": 1,
   "extensions": [
     {
+      "id": "blueos-jupyter",
+      "name": "Jupyter Notebook",
+      "description": "Python notebook for onboard development",
+      "version": "0.2.0",
+      "manifest": "blueos-jupyter/manifest.json",
+      "icon": "blueos-jupyter/icon.png",
+      "author": "CQSZDIY"
+    },
+    {
+      "id": "blueos-ros",
+      "name": "ROS Noetic",
+      "description": "ROS environment for BlueOS",
+      "version": "0.0.2",
+      "manifest": "13.209.69.202:80/extensions/blueos-ros/manifest.json",
+      "icon": "13.209.69.202:80/extensions/blueos-ros/icon-ros.png",
+      "author": "CQSZDIY"
+    },
+    {
+      "id": "blueos-ros2",
+      "name": "ROS2 Jazzy",
+      "description": "ROS2 environment for BlueOS",
+      "version": "0.1.0",
+      "manifest": "blueos-ros2/manifest.json",
+      "icon": "blueos-ros2/icon.png",
+      "author": "CQSZDIY"
+    },
+    {
+      "id": "blueos-precision-landing",
+      "name": "Precision-Landing",
+      "description": "precision landing for BlueOS",
+      "version": "0.0.1",
+      "manifest": "blueos-precision-landing/manifest.json",
+      "icon": "blueos-precision-landing/icon.png",
+      "author": "CQSZDIY"
+    },
+    {
+      "id": "blueos-foxglove",
+      "name": "Foxglove",
+      "description": "foxglove ROS2 for BlueOS",
+      "version": "0.0.4",
+      "manifest": "blueos-foxglove/manifest.json",
+      "icon": "blueos-foxglove/icon.png",
+      "author": "CQSZDIY"
+    },
+  ]
+}
+
+
+
+{
+  "version": 1,
+  "extensions": [
+    {
       "id": "blueos-ros",
       "name": "ROS Noetic",
       "description": "ROS environment for BlueOS",
