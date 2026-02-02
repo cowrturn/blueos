@@ -48,20 +48,3 @@
     },
   ]
 }
-
-
-
-{
-  "version": 1,
-  "extensions": [
-    {
-      "id": "blueos-ros",
-      "name": "ROS Noetic",
-      "description": "ROS environment for BlueOS",
-      "version": "0.0.2",
-      "manifest": "13.209.69.202:80/extensions/blueos-ros/manifest.json",
-      "icon": "13.209.69.202:80/extensions/blueos-ros/icon-ros.png",
-      "author": "CQSZDIY"
-    },
-  ]
-}
